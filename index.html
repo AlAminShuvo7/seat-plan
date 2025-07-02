@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Seat Plan</title>
 </head>
-<body>
-    
-    <h3>Post: Combined 5 Banks, OC-2022</h3>
 
-    <div>
+<body class="roboto-normal">
+
+    <h3 class="main-head">Combined 5 Banks, OC-2022</h3>
+
+    <div id="inputs">
         <p>Please Enter your roll:</p>
         <!-- action="result.html" -->
-        <form method="get">
-            <input id="roll-number" type="text" name="roll" placeholder="Enter your roll number" required> <br>
-            <button id="final" type="submit">Submit</button>
+        <input id="roll-number" type="number" name="roll" placeholder="Enter your roll number" required> <br>
+        <button id="final">Submit</button>
     </div>
 
-    <div id="result">
 
-    </div>
+    <section id="result-section">
+        <p id="declare">Your Center is:</p>
+        <div id="result">
 
+        </div>
+        
+
+    </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
