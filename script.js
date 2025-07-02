@@ -76,7 +76,7 @@ function show() {
         // Number of Candidates
         const candidates = document.createElement("p");
         candidates.setAttribute("class", "num");
-        candidates.innerText = "Total Candidates: " + 
+        candidates.innerText = "Total Candidates In Your Center: " + 
             examCenters.find(center => x >= center[3] && x <= center[4])[5];
         resultDiv.appendChild(candidates);
 
